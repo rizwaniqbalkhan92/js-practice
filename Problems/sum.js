@@ -54,3 +54,22 @@ return count;
 
 console.log("COUNT_NUMBER_OF DIGITS==>>",CountOfDigitsOfNumber(23124));
 
+var twoSum = function (nums, target) {
+
+
+    var arr=[];
+    for(let i=0; i<nums?.length; i++){
+        if(nums[i] + nums [i + 1] === target ){
+            arr.push(i);
+            arr.push(i+1);
+        }
+    }
+    return arr
+
+};
+
+console.log("CHECK===>>", twoSum([3,4,9,6,4], 8))
+
+
+
+
