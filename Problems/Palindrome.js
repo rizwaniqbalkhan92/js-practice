@@ -20,3 +20,13 @@ console.log("checkpalindromeNum===>",checkpalindromeNum(121));
 
 
 
+// palindrome check
+
+function checkpalindromeNum2(num){
+    let numToStr=num.toString();
+    let reverseStr=numToStr.split('').reverse().join('');
+
+    return reverseStr === numToStr ? 'Number is Palindrome ' :' Not palindrome'
+}
+
+console.log("checkpalindromeNum2=====>>",checkpalindromeNum2(12121))
